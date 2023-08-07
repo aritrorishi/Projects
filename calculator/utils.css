@@ -1,0 +1,39 @@
+.button{
+    height: 10vb;
+    width: 8vb;
+    float: left;
+    border-radius: 5px;
+    text-align: center;
+    align-items: center;
+    margin: 8px ;
+    font-size: medium;
+    background: radial-gradient(rgb(174, 217, 226), rgb(152, 176, 216));
+}
+
+.fullbody{
+    height: max-content;
+    width: max-content;
+    position: absolute;
+    
+    background: radial-gradient(rgb(114, 230, 204), rgb(111, 230, 144));
+    border: solid;
+    border-radius: 15px;
+    padding: 20px;
+    flex-direction: column;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 25%);
+}
+
+.input{
+    height: 15vb;
+    width: 40vb;
+    border-radius: 5px;
+    font-size: medium;
+    background: linear-gradient(rgb(127,227,255), rgb(125, 191, 196));
+}
+
+.parent{
+    position: relative;
+}
+
