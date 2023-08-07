@@ -1,0 +1,38 @@
+.input{
+    text-align: center;
+    align-items: center;
+    color: rgb(70, 252, 4);
+    font-size: 120px;
+    font-weight: bold;
+    border-width: 5px;
+    margin: 50px;
+    border: seagreen;
+    border: 10px;
+    border-radius: 40px;
+    align-self: center;
+    width: 1200px;
+    height: 400px;
+    background-color: rgb(35, 97, 61);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
+}
+
+.din{
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-color: rgb(35, 97, 61);
+    border: 10px;
+    border-radius: 20px;
+}
+
+.header{
+    background-color: black;
+    color: aliceblue ;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.bodi{
+    background-color: black;
+}
