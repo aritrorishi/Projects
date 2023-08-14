@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <body bgcolor="yellow">
+        <center>
+            <h3>prediction</h3>
+            {%if data == 0%}
+            <h4>its iris setosa</h4>
+            <img src = "D:\jupiter\setosa.jpg">
+
+            {%elif data == 1%}
+            <h4>its iris versicolor</h4>
+            <img src="D:\jupiter\versiclor.jpg">
+            
+            {%else%}
+            <h4>its iris virginica</h4>
+            <img src = "D:\jupiter\virginica.jpg">
+
+
+            {%endif%}
+
+            <a href='/'>go back to home page</a>
+
+        </center>
+
+    </body>
+</html>
