@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_a33fc122a45c68c97a8a41a8f433cd3b {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+        <script>
+            function disableDraggingOnMinZoom() {
+                var map = map_a33fc122a45c68c97a8a41a8f433cd3b;
+                function updateMapInteractivity() {
+                    if (map.getZoom() === map.getMinZoom()) {
+                        map.dragging.disable();
+                        map.touchZoom.disable();
+                        map.doubleClickZoom.disable();
+                        map.scrollWheelZoom.disable();
+                    } else {
+                        map.dragging.enable();
+                        map.touchZoom.enable();
+                        map.doubleClickZoom.enable();
+                        map.scrollWheelZoom.enable();
+                    }
+                }
+                map.on('zoomend', updateMapInteractivity);
+                map.on('load', updateMapInteractivity);
+                updateMapInteractivity();
+            }
+            document.addEventListener("DOMContentLoaded", function() {
+                disableDraggingOnMinZoom();
+            });
+        </script>
+        
+    
+            <div class="folium-map" id="map_a33fc122a45c68c97a8a41a8f433cd3b" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_a33fc122a45c68c97a8a41a8f433cd3b = L.map(
+                "map_a33fc122a45c68c97a8a41a8f433cd3b",
+                {
+                    center: [0.0, 0.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 2,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_78742ff308c865dd9e42a8d2c1a9a5e6 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 20, "maxZoom": 20, "minZoom": 2, "noWrap": false, "opacity": 1, "subdomains": "abcd", "tms": false}
+            );
+        
+    
+            tile_layer_78742ff308c865dd9e42a8d2c1a9a5e6.addTo(map_a33fc122a45c68c97a8a41a8f433cd3b);
+        
+    
+            var poly_line_6254b6194c68e7a09285abe53e032f4d = L.polyline(
+                [[40.9068, -180.0], [40.9068, 180.0]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 2, "smoothFactor": 1.0, "stroke": true, "weight": 0.5}
+            ).addTo(map_a33fc122a45c68c97a8a41a8f433cd3b);
+        
+    
+            var poly_line_4547e64f2fe4da84886b3af9002ec534 = L.polyline(
+                [[-90.0, -73.1277], [90.0, -73.1277]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 2, "smoothFactor": 1.0, "stroke": true, "weight": 0.5}
+            ).addTo(map_a33fc122a45c68c97a8a41a8f433cd3b);
+        
+    
+            var marker_1dea4a07e7d6318c484451cca6b98e5e = L.marker(
+                [40.9068, -73.1277],
+                {}
+            ).addTo(map_a33fc122a45c68c97a8a41a8f433cd3b);
+        
+    
+            var div_icon_5eb9501f7947d2ea9716e8acde5f2dc9 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-family: sans-serif; color: yellow;\"\u003e\u2727\u003c/div\u003e"});
+            marker_1dea4a07e7d6318c484451cca6b98e5e.setIcon(div_icon_5eb9501f7947d2ea9716e8acde5f2dc9);
+        
+    
+        var popup_13e6ba3059b56171b3074ef48bf9c7c7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_11385ca7bd2bb886d1d8510148666cc9 = $(`<div id="html_11385ca7bd2bb886d1d8510148666cc9" style="width: 100.0%; height: 100.0%;">72.8.8.2, Stony Brook</div>`)[0];
+                popup_13e6ba3059b56171b3074ef48bf9c7c7.setContent(html_11385ca7bd2bb886d1d8510148666cc9);
+            
+        
+
+        marker_1dea4a07e7d6318c484451cca6b98e5e.bindPopup(popup_13e6ba3059b56171b3074ef48bf9c7c7)
+        ;
+
+        
+    
+</script>
+</html>
